@@ -2,9 +2,11 @@
   "name": "dev-connector",
   "version": "1.0.0",
   "description": "Social network for developers",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node server",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
     "server": "nodemon server"
   },
   "repository": {
