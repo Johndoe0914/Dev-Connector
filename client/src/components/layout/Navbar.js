@@ -6,7 +6,7 @@ export default class Navbar extends Component {
     return (
       <nav className="navbar bg-dark">
         <h1>
-          <Link to="index.html">
+          <Link to="/">
             <i class="fas fa-code" /> DevConnector
           </Link>
         </h1>
@@ -15,10 +15,10 @@ export default class Navbar extends Component {
             <Link to="/developers">Developers</Link>
           </li>
           <li>
-            <Link to="register.html">Register</Link>
+            <Link to="/register">Register</Link>
           </li>
           <li>
-            <Link to="login.html">Login</Link>
+            <Link to="/login">Login</Link>
           </li>
         </ul>
       </nav>
